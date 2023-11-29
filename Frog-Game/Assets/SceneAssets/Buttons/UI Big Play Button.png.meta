@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 34e6b325d487d40ff80adcc428cbeda9
+guid: ac1bd0f861ade44d7b031eebe57802ee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,64 +123,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MantisAttack_0
+      name: UI Big Play Button_0
       rect:
         serializedVersion: 2
-        x: 192
-        y: 96
-        width: 32
+        x: 0
+        y: 32
+        width: 96
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8da10b5a3e724b70901e61227261035
-      internalID: 1729075395
+      spriteID: c1f31b8aa25b1495e940cd897683fc58
+      internalID: -193244233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MantisAttack_1
+      name: UI Big Play Button_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
+        x: 96
+        y: 32
+        width: 96
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a1109723ef044cf3ac004bfde0b006b
-      internalID: -1370687660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MantisAttack_2
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e26e07a08375543af9736147600acdb1
-      internalID: -761142029
+      spriteID: 1e26fe876ee6f4269aaf9b110e8581e6
+      internalID: 1396318350
       vertices: []
       indices: 
       edges: []
@@ -196,9 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MantisAttack_0: 1729075395
-      MantisAttack_1: -1370687660
-      MantisAttack_2: -761142029
+      UI Big Play Button_0: -193244233
+      UI Big Play Button_1: 1396318350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
