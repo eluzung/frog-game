@@ -18,7 +18,7 @@ public class PelletMovement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         //When Pellet hits enemies, invoke scripts
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 
 }

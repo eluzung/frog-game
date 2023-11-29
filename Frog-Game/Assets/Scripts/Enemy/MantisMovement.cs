@@ -25,6 +25,11 @@ public class MantisMovement : MonoBehaviour
 
     void Update()
     {
+        Move();
+    }
+
+    private void Move()
+    {
         Vector2 point = currentPoint.position - transform.position;
 
         if (currentPoint == edgeB.transform)
@@ -54,5 +59,20 @@ public class MantisMovement : MonoBehaviour
         isFacingRight = !isFacingRight;
     }
 
-    
+    private void Die()
+    {
+        mantisAnimation.SetBool("IsHit", true);
+        Destroy(this.gameObject, 0.2f);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Shoot"))
+        {
+            rigid.constraints = RigidbodyConstraints2D.FreezeAll;
+            Destroy(collision.gameObject);
+            Die();
+        }
+    }
+
 }
