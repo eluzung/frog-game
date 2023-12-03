@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 public class MantisMovement : MonoBehaviour
 {
@@ -8,12 +9,19 @@ public class MantisMovement : MonoBehaviour
     [SerializeField] public GameObject edgeB;
     [SerializeField] public const int SPEED = 2;
     [SerializeField] bool isFacingRight = true;
+    [SerializeField] public GameObject[] enemies;
+    [SerializeField] public Scene scene;
+    [SerializeField] public int enemyLength;
     private Animator mantisAnimation;
     private Transform currentPoint;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
+        scene = SceneManager.GetActiveScene();
+
         if (rigid == null)
             rigid = GetComponent<Rigidbody2D>();
 
@@ -67,6 +75,11 @@ public class MantisMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
+        }
+
         if (collision.gameObject.CompareTag("Shoot"))
         {
             rigid.constraints = RigidbodyConstraints2D.FreezeAll;
@@ -74,5 +87,4 @@ public class MantisMovement : MonoBehaviour
             Die();
         }
     }
-
 }

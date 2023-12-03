@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Enemy
   - Shoot
+  - Audio
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: ground
     uniqueID: 3384945353
+    locked: 0
+  - name: sky
+    uniqueID: 1206696907
     locked: 0
